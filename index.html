@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full bg-gray-50">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>83A Labs - Political Podcast Intelligence Platform</title>
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="83A Labs - Political Podcast Intelligence Platform">
+    <meta name="description" content="Discover and analyze influential political podcasts with AI-powered insights. Track trends, political leanings, and get smart summaries of key discussions.">
+    <meta name="keywords" content="political podcasts, podcast analytics, AI analysis, political bias tracking, media monitoring, podcast intelligence">
+    
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="512x512" href="static/images/favicon-512.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/images/favicon-192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/images/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/images/favicon-16.png">
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+    
+    <!-- Inter font family -->
+    <link rel="preconnect" href="https://rsms.me/" />
+    <link href="https://rsms.me/inter/inter.css" rel="stylesheet" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter var', 'sans-serif'],
+            },
+            colors: {
+              'nav-blue': '#083A90',
+              'left-blue': '#60a5fa',
+            },
+            animation: {
+              'wiggle': 'wiggle 0.7s ease-in-out',
+            },
+            keyframes: {
+              wiggle: {
+                '0%, 100%': { transform: 'rotate(-3deg)' },
+                '50%': { transform: 'rotate(3deg)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    
+    <!-- Custom CSS -->
+    <style>
+      .nav-lab {
+        background: linear-gradient(135deg, #083A90 0%, #1e40af 100%);
+      }
+      
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;
+        font-weight:600;border-radius:0.375rem;
+        transition:transform .15s ease,box-shadow .15s ease,
+                   background-color .15s ease;
+        text-decoration:none;
+      }
+      .btn-outline{
+        background:#fff;color:#083A90;border:2px solid #083A90;
+        padding:.5rem 1.25rem;
+      }
+      .btn-outline:hover{
+        background:#60a5fa;color:#fff;transform:translateY(-1px) scale(1.015);
+        box-shadow:0 6px 14px rgba(0,0,0,.08);
+      }
+      .btn-primary{
+        background:#083A90;color:#fff;border:2px solid #083A90;
+        padding:.75rem 2rem;
+      }
+      .btn-primary:hover{
+        background:#1e40af;transform:translateY(-1px) scale(1.02);
+        box-shadow:0 8px 20px rgba(8,58,144,.3);
+      }
+    </style>
+</head>
+<body class="h-full">
+    <!-- Navigation -->
+    <nav class="relative nav-lab bg-nav-blue sticky top-0 z-50 text-white shadow-md overflow-hidden">
+      <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <!-- logo + beta badge -->
+        <div class="flex items-center space-x-3 group">
+          <img src="static/images/83alabs_logo.png" alt="83A Labs Logo" class="h-10 w-auto">
+          <div class="flex items-center">
+            <span class="inline-flex items-center gap-2 px-3 py-1 rounded-md text-base font-bold bg-left-blue/90 text-white shadow transition-transform duration-200 ease-in-out group-hover:animate-[wiggle_0.7s_ease-in-out]">
+              <span class="inline-block text-xl leading-none">🧪</span>
+              BETA
+            </span>
+          </div>
+        </div>
+        
+        <!-- Navigation Links -->
+        <div class="hidden md:flex items-center space-x-6">
+          <a href="#" class="btn btn-outline text-sm w-28 text-center">YouTube</a>
+          <a href="#" class="btn btn-outline text-sm w-28 text-center">Podcasts</a>
+          <a href="#" class="btn btn-outline text-sm w-28 text-center">Newsletter</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="flex-1">
+      <!-- Hero Section -->
+      <section class="relative bg-gradient-to-br from-gray-50 via-white to-blue-50 py-20 lg:py-32">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+          <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight">
+            The Intelligence Layer for<br>
+            <span class="text-nav-blue">Political & Cultural Podcasts</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto leading-relaxed">
+            Track how ideas spread and shape public opinion at scale.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <a href="#" class="btn btn-primary text-lg px-8 py-4">
+              Request Beta Access
+            </a>
+            <p class="text-sm text-gray-500">
+              Beta access: admin@83alabs.com
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+              What Makes 83A Labs Different?
+            </h2>
+          </div>
+          
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Feature 1 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">🧠</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Podcast Analytics Dashboard</h3>
+              <p class="text-gray-600">Track subscribers, views, and publishing trends for leading political podcasts. Gain cultural context from quantitative insights.</p>
+            </div>
+            
+            <!-- Feature 2 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">💡</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Instant Episode Intelligence</h3>
+              <p class="text-gray-600">Each episode decoded. Get auto-generated summaries, top takeaways, themes, and sentiment, all through a cultural-political lens.</p>
+            </div>
+            
+            <!-- Feature 3 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">⚖️</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Political Lean & Influence Mapping</h3>
+              <p class="text-gray-600">Understand how narratives align across the political spectrum and watch how biases evolve with cultural momentum.</p>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">🔥</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Trending Topics Explorer</h3>
+              <p class="text-gray-600">See what ideas are gaining traction. Track topics from first mention to viral spread, and see who's driving the conversation.</p>
+            </div>
+            
+            <!-- Feature 5 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">📊</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Cultural Trend Visualizations</h3>
+              <p class="text-gray-600">Dive deep into how culture and content move minds. Explore episode performance, language shifts, and influence metrics with intuitive visuals.</p>
+            </div>
+            
+            <!-- Feature 6 -->
+            <div class="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow">
+              <div class="text-4xl mb-4">🚀</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Beta Community</h3>
+              <p class="text-gray-600">Join a pioneering group helping shape the future of cultural-political intelligence. Your feedback powers our evolution.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Section -->
+      <section class="py-20 bg-gradient-to-r from-nav-blue to-blue-600">
+        <div class="max-w-4xl mx-auto px-6 text-center text-white">
+          <h2 class="text-3xl md:text-4xl font-bold mb-6">
+            Ready to Understand Political Culture Like Never Before?
+          </h2>
+          <p class="text-xl mb-8 opacity-90">
+            Be among the first to explore the intersection of culture, media, and political influence. Request beta access and unlock the next wave of insight.
+          </p>
+          <a href="#" class="btn btn-primary text-lg px-8 py-4 bg-white text-nav-blue hover:bg-gray-100">
+            Request Beta Access
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p class="text-gray-400">© 2025 83A Labs. All rights reserved.</p>
+      </div>
+    </footer>
+</body>
+</html>
