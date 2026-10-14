@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>83A Labs LLC</title>
+  <meta name="description" content="83A Labs LLC. Quantitative research and proprietary trading.">
+
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon-512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <style>
+    :root {
+      --blue: #083A90;
+      --ink: #111827;
+      --muted: #6b7280;
+      --bg: #f9fafb;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex;
+      flex-direction: column;
+      background: var(--bg);
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+    }
+    .logo {
+      width: min(260px, 70vw);
+      height: auto;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(8, 58, 144, 0.25);
+    }
+    h1 {
+      margin: 36px 0 8px;
+      font-size: clamp(1.75rem, 5vw, 2.5rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    p.tagline {
+      margin: 0 0 28px;
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      color: var(--muted);
+    }
+    a.contact {
+      color: var(--blue);
+      font-weight: 600;
+      text-decoration: none;
+      border-bottom: 2px solid transparent;
+    }
+    a.contact:hover, a.contact:focus { border-bottom-color: var(--blue); }
+    footer {
+      padding: 20px 24px;
+      text-align: center;
+      font-size: 0.875rem;
+      color: var(--muted);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <img class="logo" src="83alabs_logo.png" alt="83A Labs logo">
+    <h1>83A Labs LLC</h1>
+    <p class="tagline">Quantitative research and proprietary trading.</p>
+    <a class="contact" href="mailto:phil@83alabs.com">phil@83alabs.com</a>
+  </main>
+  <footer>&copy; 2026 83A Labs LLC</footer>
+</body>
+</html>
